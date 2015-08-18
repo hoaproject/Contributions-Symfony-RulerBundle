@@ -2,5 +2,8 @@ parameters:
     hoathis.ruler.class: Hoa\Ruler\Ruler
 
 services:
-    hoathis.ruler:
+    hoathis.ruler.raw:
         class: %hoathis.ruler.class%
+
+    hoathis.ruler:
+        alias: hoathis.ruler.raw

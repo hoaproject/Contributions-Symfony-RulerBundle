@@ -1,0 +1,15 @@
+services:
+    hoathis.data_collector.ruler:
+        class:      Hoathis\Bundle\RulerBundle\DataCollector\RulerDataCollector
+        arguments:  [ @hoathis.ruler.logged ]
+        tags:
+            - { name: data_collector, template: "HoathisRulerBundle:Collector:collector", id: "hoathis.ruler" }
+
+    hoathis.ruler.logged:
+        class:      Hoathis\Bundle\RulerBundle\Ruler\LoggedRuler
+        arguments:  [ @hoathis.ruler.wrapped ]
+        decorates:  hoathis.ruler.raw
+        decoration_inner_name: hoathis.ruler.wrapped
+
+    hoathis.ruler:
+        alias: hoathis.ruler.logged
