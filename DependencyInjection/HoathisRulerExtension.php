@@ -8,7 +8,7 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 /**
- * RulerExtension.
+ * HoathisRulerExtension.
  *
  * @author Kévin Gomez <contact@kevingomez.fr>
  */
@@ -22,8 +22,22 @@ class HoathisRulerExtension extends Extension
      */
     public function load(array $configs, ContainerBuilder $container)
     {
+        $configuration = $this->getConfiguration($configs, $container);
+        $config        = $this->processConfiguration($configuration, $configs);
+
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
-        $loader->load('data_collector.yml');
+
+        if ($config['debug']) {
+            $loader->load('data_collector.yml');
+        }
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function getConfiguration(array $config, ContainerBuilder $container)
+    {
+        return new Configuration($container->getParameter('kernel.debug'));
     }
 }

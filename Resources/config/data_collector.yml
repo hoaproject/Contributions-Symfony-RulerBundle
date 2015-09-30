@@ -10,6 +10,7 @@ services:
         arguments:  [ @hoathis.ruler.wrapped ]
         decorates:  hoathis.ruler.raw
         decoration_inner_name: hoathis.ruler.wrapped
+        public:     false
 
     hoathis.ruler:
         alias: hoathis.ruler.logged

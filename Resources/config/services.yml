@@ -3,7 +3,8 @@ parameters:
 
 services:
     hoathis.ruler.raw:
-        class: %hoathis.ruler.class%
+        class:  %hoathis.ruler.class%
+        public: false
 
     hoathis.ruler:
         alias: hoathis.ruler.raw
