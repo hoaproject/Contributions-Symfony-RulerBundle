@@ -5,7 +5,7 @@ Moreover, Hoa aims at being a bridge between industrial and research worlds.
 
 # Hoathis\SymfonyRulerBundle
 
-…
+Integrates [Hoa\Ruler](https://github.com/hoaproject/Ruler) in Symfony.
 
 ## Installation
 
@@ -72,7 +72,18 @@ public function indexAction(Request $request)
 
 ### Profiler
 
-…
+When the debug mode is enabled, all assertions are logged and displayed in the
+web profiler:
+
+![profiler toolbar](./Resources/meta/profiler_toolbar.png)
+![profiler panel](./Resources/meta/profiler_panel.png)
+
+### Configuration reference
+
+```yaml
+hoathis_ruler:
+    debug:  %kernel.debug%
+```
 
 ## License
 
