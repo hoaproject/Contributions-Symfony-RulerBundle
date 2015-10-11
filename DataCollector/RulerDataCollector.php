@@ -77,11 +77,11 @@ class RulerDataCollector implements DataCollectorInterface
             $totalTime                        += $ruleTime;
         }
 
-        $this->data = array(
+        $this->data = [
             'statistics' => $statistics,
             'count'      => array_sum(array_column($statistics, 'count')),
             'time'       => $totalTime,
-        );
+        ];
     }
 
     /**
