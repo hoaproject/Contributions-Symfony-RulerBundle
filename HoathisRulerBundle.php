@@ -38,6 +38,10 @@ namespace Hoathis\Bundle\RulerBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
+/**
+ * @copyright  Copyright © 2007-2015 Hoa community
+ * @license    New BSD License
+ */
 class HoathisRulerBundle extends Bundle
 {
 }

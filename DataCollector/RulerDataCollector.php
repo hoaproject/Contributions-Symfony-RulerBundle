@@ -45,7 +45,9 @@ use Hoathis\Bundle\RulerBundle\Ruler\LoggedRuler;
 /**
  * Ruler data collector.
  *
- * @author Kévin Gomez <contact@kevingomez.fr>
+ * @author     Kévin Gomez <contact@kevingomez.fr>
+ * @copyright  Copyright © 2007-2015 Hoa community
+ * @license    New BSD License
  */
 class RulerDataCollector implements DataCollectorInterface
 {
