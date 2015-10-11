@@ -47,7 +47,7 @@ class AppKernel extends Kernel
 ### Ruler service
 
 The `RulerBundle` defines a `hoathis.ruler` service that can be used as
-described in [Ruler's documentation](http://hoa-project.net/En/Literature/Hack/Ruler.html).
+described in [`Hoa\Ruler`'s documentation](http://hoa-project.net/Literature/Hack/Ruler.html).
 
 ```php
 public function indexAction(Request $request)
