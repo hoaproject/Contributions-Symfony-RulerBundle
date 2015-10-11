@@ -1,6 +1,6 @@
 {
     "name"       : "hoathis/symfony-ruler-bundle",
-    "description": "The Hoa\\Ruler Symfony 2 bundle.",
+    "description": "The Hoa\\Ruler Symfony2 bundle.",
     "type"       : "symfony-bundle",
     "keywords"   : ["library", "hoa", "bundle", "symfony", "ruler"],
     "homepage"   : "http://hoa-project.net/",
@@ -9,10 +9,6 @@
         {
             "name" : "Kévin Gomez",
             "email": "contact@kevingomez.fr"
-        },
-        {
-            "name" : "Ivan Enderlin",
-            "email": "ivan.enderlin@hoa-project.net"
         },
         {
             "name"    : "Hoa community",
@@ -31,8 +27,5 @@
     },
     "autoload": {
         "psr-4": { "Hoathis\\Bundle\\RulerBundle\\": "" }
-    },
-    "config"    : {
-        "bin-dir": "bin/"
     }
 }
