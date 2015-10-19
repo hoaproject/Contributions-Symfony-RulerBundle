@@ -5,7 +5,7 @@ Moreover, Hoa aims at being a bridge between industrial and research worlds.
 
 # Hoathis\SymfonyRulerBundle
 
-Integrates [Hoa\Ruler](https://github.com/hoaproject/Ruler) in Symfony.
+Integrates [`Hoa\Ruler`](https://github.com/hoaproject/Ruler) in Symfony.
 
 ## Installation
 
