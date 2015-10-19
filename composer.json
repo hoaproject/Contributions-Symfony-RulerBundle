@@ -26,6 +26,6 @@
         "symfony/framework-bundle": "~2.5"
     },
     "autoload": {
-        "psr-4": { "Hoathis\\Bundle\\RulerBundle\\": "" }
+        "psr-4": { "Hoathis\\SymfonyRulerBundle\\": "" }
     }
 }

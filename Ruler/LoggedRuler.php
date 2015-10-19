@@ -34,7 +34,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace Hoathis\Bundle\RulerBundle\Ruler;
+namespace Hoathis\SymfonyRulerBundle\Ruler;
 
 use Hoa\Ruler\Context;
 use Hoa\Ruler\Ruler;

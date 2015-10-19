@@ -34,7 +34,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace Hoathis\Bundle\RulerBundle\DependencyInjection;
+namespace Hoathis\SymfonyRulerBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -42,13 +42,13 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 /**
- * HoathisRulerExtension.
+ * HoathisSymfonyRulerExtension.
  *
  * @author     Kévin Gomez <contact@kevingomez.fr>
  * @copyright  Copyright © 2007-2015 Hoa community
  * @license    New BSD License
  */
-class HoathisRulerExtension extends Extension
+class HoathisSymfonyRulerExtension extends Extension
 {
     /**
      * Responds to the twig configuration parameter.

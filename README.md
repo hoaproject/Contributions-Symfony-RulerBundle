@@ -34,7 +34,7 @@ class AppKernel extends Kernel
     {
         $bundles = array(
             // …
-            new Hoathis\Bundle\RulerBundle\HoathisRulerBundle(),
+            new Hoathis\SymfonyRulerBundle\HoathisSymfonyRulerBundle(),
         );
 
         // …

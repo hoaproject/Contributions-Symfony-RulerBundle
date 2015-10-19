@@ -34,13 +34,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace Hoathis\Bundle\RulerBundle\DataCollector;
+namespace Hoathis\SymfonyRulerBundle\DataCollector;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\DataCollector\DataCollectorInterface;
 
-use Hoathis\Bundle\RulerBundle\Ruler\LoggedRuler;
+use Hoathis\SymfonyRulerBundle\Ruler\LoggedRuler;
 
 /**
  * Ruler data collector.
