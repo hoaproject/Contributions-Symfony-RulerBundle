@@ -1,9 +1,6 @@
-parameters:
-    hoathis.ruler.class: Hoa\Ruler\Ruler
-
 services:
     hoathis.ruler.raw:
-        class:  %hoathis.ruler.class%
+        class:  Hoathis\SymfonyRulerBundle\Ruler\Ruler
         public: false
 
     hoathis.ruler:

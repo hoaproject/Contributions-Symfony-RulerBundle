@@ -37,51 +37,24 @@
 namespace Hoathis\SymfonyRulerBundle\Ruler;
 
 use Hoa\Ruler\Context;
+use Hoa\Ruler\Ruler as HoaRuler;
 
 /**
- * A special Ruler that logs a lot of stuff.
- *
- * @note Should only be used in developement or test environments.
+ * Extends the original Ruler to add a few shortcuts.
  *
  * @author     Kévin Gomez <contact@kevingomez.fr>
  * @copyright  Copyright © 2007-2015 Hoa community
  * @license    New BSD License
  */
-class LoggedRuler extends Ruler
+class Ruler extends HoaRuler
 {
-    private $statistics = [];
-
     /**
-     * @inheritDoc
-     */
-    public function assert($rule, Context $context = null)
-    {
-        $ruleAsString = (string) $rule;
-
-        if (empty($this->statistics[$ruleAsString])) {
-            $this->statistics[$ruleAsString] = [
-                'count'     => 0,
-                'durations' => [],
-            ];
-        }
-
-        $start = microtime(true);
-        $result = parent::assert($rule, $context);
-        $duration = microtime(true) - $start;
-
-        $this->statistics[$ruleAsString]['count'] += 1;
-        $this->statistics[$ruleAsString]['durations'][] = $duration;
-
-        return $result;
-    }
-
-    /**
-     * Returns the statistics recorded during the execution.
+     * Create a new context.
      *
-     * @return array
+     * @return \Hoa\Ruler\Context
      */
-    public function getStatistics()
+    public function getNewContext()
     {
-        return $this->statistics;
+        return new Context();
     }
 }

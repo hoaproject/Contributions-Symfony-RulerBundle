@@ -57,7 +57,7 @@ public function indexAction(Request $request)
     $rule  = 'group in ["customer", "guest"] and points > 30';
 
     // 2. Create a context.
-    $context           = new \Hoa\Ruler\Context();
+    $context           = $ruler->getNewContext();
     $context['group']  = 'customer';
     $context['points'] = function () {
         return 42;
