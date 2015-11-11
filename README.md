@@ -81,7 +81,7 @@ web profiler:
 ### Configuration reference
 
 ```yaml
-hoathis_ruler:
+hoathis_symfony_ruler:
     debug:  %kernel.debug%
 ```
 

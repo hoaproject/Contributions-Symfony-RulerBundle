@@ -63,7 +63,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('hoathis_ruler');
+        $rootNode = $treeBuilder->root('hoathis_symfony_ruler');
 
         $this->addGeneralNode($rootNode);
 
