@@ -1,13 +1,13 @@
 services:
     hoathis.data_collector.ruler:
         class:      Hoathis\SymfonyRulerBundle\DataCollector\RulerDataCollector
-        arguments:  [ @hoathis.ruler.logged ]
+        arguments:  [ "@hoathis.ruler.logged" ]
         tags:
             - { name: data_collector, template: "HoathisSymfonyRulerBundle:Collector:collector", id: "hoathis.ruler" }
 
     hoathis.ruler.logged:
         class:      Hoathis\SymfonyRulerBundle\Ruler\LoggedRuler
-        arguments:  [ @hoathis.ruler.wrapped ]
+        arguments:  [ "@hoathis.ruler.wrapped" ]
         decorates:  hoathis.ruler.raw
         decoration_inner_name: hoathis.ruler.wrapped
         public:     false
