@@ -22,7 +22,7 @@
     },
     "require": {
         "php": ">=5.5",
-        "hoa/ruler": "~1.0",
+        "hoa/ruler": "~2.0",
         "symfony/framework-bundle": "~2.5|~3.0"
     },
     "autoload": {
